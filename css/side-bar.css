@@ -22,11 +22,17 @@
   display: none;
 }
 
-.w3-bar .w3-bar-item{
+.w3-bar{
     text-align: center;
     display: inline-block;
     background-color: var(--dark-primary-color);
 }
+.w3-bar-item{
+    text-align: center;
+    display: inline-block;
+    background-color: var(--dark-primary-color);
+}
+
 .dotted-border {
     border-width: 5px;  
     border-right-style: dashed;
@@ -91,4 +97,17 @@
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
+
+.local-links{
+    background: rgb(205 209 218);
+    border: 2px solid var(--background-dark);
+    text-align: center;
+    width: 90%;
+    margin: 10px auto;
+    border-radius: 50px;
+    padding: 10px;
+}
+.local-links a{
+    margin-left:  15px;
+}
 
