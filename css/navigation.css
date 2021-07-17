@@ -1,0 +1,147 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, front-aside, main-aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video 
+{
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+
+:root{
+    --dark-primary-color: #804ABA;
+    --light-primary-color:  #9E42FF;
+    --border:#804ABA;
+    --background-mustard: #A3A324;
+    --text: #f0ef65;
+    --accent: #a3a324;
+    --text-light: white;
+    --text-black: #280931;
+    --divider-color: #BDBDBD;
+    --w3-khaki: #f0e68c;
+}
+
+/* hover MUST come after link and visited active MUST come after hover */
+
+/*https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_dividers*/
+
+ul {
+  list-style-type: none;
+  display: flex;
+  padding: 5px 5px;
+  margin: auto;
+  overflow:auto;
+  border: 1px solid yellow;
+  background-color: orange;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display:inline-block;
+  text-align: center;
+  padding: 20px 80px;
+  text-decoration: none;
+  border-right: 2px dashed black;
+  border-left: 2px dashed black;
+  border-bottom:  solid 10px yellow;
+  border-top: solid 10px yellow;
+}
+
+li:last-child first-child {
+  border-right: 3px dashed black;
+  border-left: 3px dashed black;
+  border-bottom:  solid 10px yellow;
+  border-top: solid 10px yellow;
+}
+
+li a:hover:not(.active) {
+  background-color: var(--light-primary-color)
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+/*my buttons*/
+.local-links{
+    border: 2px solid var(--background-dark);
+    width: 90%;
+    margin: 10px auto;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.local-links a{
+    margin-left:  15px;
+}
+
+#panel {
+  font-size: 16px;
+  padding: 10px;
+  text-align: center;
+  background-color: #4CAF50;
+  color: white;
+  border: solid 1px #a6d8a8;
+  margin: auto;
+  display: none;
+}
+.w3-bar .w3-bar-item{
+    text-align: center;
+    display: inline-block;
+    background-color: var(--dark-primary-color);
+}
+.border-solid{
+  border-width: 15px;
+  border-top: 15px;
+  border-bottom: 15px;
+  border-bottom-style: solid; 
+  border-color: var(--text);
+}
+.border-dashed {
+   border-width: 5px;
+   border-left-style:  dashed;
+   border-right-style: dashed;
+   border-color: var(--text-black);
+}
+
+.dropdown-hover{
+    text-align: center;
+    display: inline-block;
+    border-bottom: var(--dark-primary-color);
+    border-top: var(--dark-primary-color);
+    border-left: var(--dark-primary-color);
+    border-right: var(--dark-primary-color);
+    cursor: pointer;
+}
+
+.dotted-border {
+    border-width: 5px;  
+    border-right-style: dashed;
+    border-left-style: dashed;
+}
+
+

@@ -16,8 +16,8 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, front-aside, main-aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
+time, mark, audio, video 
+{
 	border: 0;
 	font-size: 100%;
 	vertical-align: baseline;
@@ -27,24 +27,6 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-
-/* Font family
-CormorantUnicase-Bold.ttf
-https://fonts.gstatic.com/s/roboto/v20/KFOkCnqEu92Fr1Mu51xFIzIFKw.woff2
-Level 1 Heading - Roboto, black, italic
-Level 2 Aviano Flare Regular 
-h3, h4, h5, h6, hr: 'Open Sans', sans-serif
-p: color: black; 'Roboto', sans-serif 
-href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,400;1,500&display=swap"
-        rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
- <link rel="preconnect" href="https://fonts.gstatic.com">
- href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital,wght@0,400;1,400;1,500&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="<link rel=" stylesheet" href="https://use.typekit.net/qch1cjo.css">
-*/
-
 
 /*  ---------------------- Variables ---------------------- */
 /* Read more about variables here: https://www.w3schools.com/css/css3_variables.asp */
@@ -88,10 +70,18 @@ href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,400;1,50
     background-color:  var(--background-dark);
     list-style: none;
 }
-.accent{
-    color: var(--accent)
+.container-golden{
+    min-width: auto;
+    min-height: auto;
+    line-height: 1em;
+    list-style: none;
+    text-align: center;
+    background: var(--accent);
+    color: var(--text-black);
 }
-
+.accent{
+    color: var(--accent);
+}
 .w3-purple{
     text-align: center;
     display: inline-block;
@@ -99,7 +89,6 @@ href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,400;1,50
     border: 3px solid var(--background-dark);
     background-color: var(--background-dark);
 }
-
 .pale purple{
     background-color: var(--light-primary-color);
 }
@@ -108,21 +97,6 @@ href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,400;1,50
     background-color:var(--w3-khaki);
 }
 
-p{
-    padding: 15px;
-    color: var(--text);
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.5;
-    color: var(--text-black);
-}
-
-.p-left{
-    text-align: left;
-    padding: 10px;
-    color: var(--text-black);
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.5;
-}
 nav{
     text-align: center;
     line-height: 20px;
@@ -169,16 +143,6 @@ dd{
     margin-right: auto;
     width: 50%;
 }
-
-.container-golden{
-    min-width: auto;
-    min-height: auto;
-    line-height: 1em;
-    list-style: none;
-    text-align: center;
-    background: var(--accent);
-    color: var(--text-black);
-}
 .main{
     position: relative;
     left: 15%;
@@ -186,11 +150,6 @@ dd{
     height: inherit;
 }
 
-li{
-    color: #000;
-    text-align: left;
-    list-style-position: outside;
-}
 .ul-a{
     text-align: left;
     width: 60px;
@@ -199,7 +158,22 @@ li{
     flex-wrap: wrap;
     align-content: center;
 }
+.p{
+    padding: 15px;
+    color: var(--text);
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.0;
+    color: var(--text-black);
+    text-align: justify;
+}
 
+.p-left{
+    text-align: left;
+    padding: 10px;
+    color: var(--text-black);
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+}
 h1{
     display: block;
     text-align:center;
@@ -230,7 +204,7 @@ h3, h4, h5, h6, hr{
 .home__main {
     display: flex;
     flex-flow: row wrap;
-    margin: 10px 20px;
+    margin: 10px 30px;
     box-sizing: border-box;
     color: var(--text-black);
 }
