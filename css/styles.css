@@ -13,7 +13,7 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, front-aside, main-aside, canvas, details, embed, 
+article, aside, home-aside, front-aside, main-aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video 
@@ -112,6 +112,11 @@ header{
     line-height: 1em;
     margin: auto 70px 70px;
 }
+/* Increase the font size of the <h1> element */
+.header h1 {
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif; 
+}
 
 dl {
     display: block;
@@ -178,32 +183,33 @@ dd{
 h1{
     display: block;
     text-align:center;
-    padding: 25px;
+    padding: 15px;
     font-weight: bold;
-    font-size: large; 
+    font-size: 1.5em; 
     font-family: 'Roboto', sans-serif; 
     color: var(--text-black);
 }
 
 h2{
     text-align:center;
-    padding: 25px;
+    padding: 5px;
     font-weight: bold;
-    font-size: large;
+    font-size: 1.0em;
     font-family: aviano-flare, sans-serif;
     color: var(--text-black);
 }
 
 h3, h4, h5, h6, hr{ 
     display: block;
-    padding: 15px; 
+    padding: 5px; 
     font-family: 'Open Sans', sans-serif; 
-    font-size: 1.5em;
+    font-size: 1.0em;
     color: var(--text-black);   
 }
 
 .home__main {
     display: flex;
+    flex: 70px;
     flex-flow: row wrap;
     margin: 10px 30px;
     box-sizing: border-box;
@@ -211,8 +217,9 @@ h3, h4, h5, h6, hr{
 }
 
 .home__aside, .home__bio {
-    flex: 1 50%;
+    flex: 1 30%;
     box-sizing: border-box;
+    padding: 20px;
     color: var(--text-black)
 }
 
@@ -329,8 +336,11 @@ footer {
     float: right;  
 }
 /* responsive gallery */
-.div.gallery {
+div.gallery {
+  margin: 5px;
   border: 1px solid #ccc;
+  float: left;
+  width: 180px;
 }
 
 div.gallery:hover {
@@ -351,20 +361,20 @@ div.desc {
   box-sizing: border-box;
 }
 
-.responsive {
-  padding: 0 6px;
-  float: left;
-  width: 24.99999%;
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other https://www.w3schools.com/howto/tryit.asp?filename=tryhow_make_a_website_content_responsive*/
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
 }
 
-@media only screen and (max-width: 700px) .responsive {
-    width: 49.99999%;
-    margin: 6px 0;
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width:100%;
   }
-
-@media only screen and (max-width: 500px) .responsive {
-    width: 100%;
-  }
+}
 
 .clearfix:after {
   content: "";
