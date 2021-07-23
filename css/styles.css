@@ -366,7 +366,6 @@ div.desc {
   .row {   
     flex-direction: column;
   }
-}
 
 /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
 @media screen and (max-width: 400px) {
@@ -374,10 +373,13 @@ div.desc {
     float: none;
     width:100%;
   }
-}
 
 .clearfix:after {
   content: "";
   display: table;
   clear: both;
+}
+
+.mySlides 
+{display:none;
 }
