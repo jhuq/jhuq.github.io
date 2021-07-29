@@ -18,7 +18,8 @@
     <link rel="stylesheet" href="../css/navigation.css">
     <link rel="stylesheet" href="../css/styles.css">
     <script type='text/javascript' src='../scripts/quoteToggle.js' async></script>
-    <script type='text/javascript' src='../scripts/slides.js' async></script>
+    <script type='text/javascript' src='../scripts/slidesmultiple.js' async></script>
+    <script type='text/javascript' src='../scripts/video.js' async></script>
 </head>
 
 <body>
@@ -36,6 +37,7 @@
             </ul>
         </nav>
     </header>
+
     <article class="container-golden w3-khaki w3-border ">
         <h1>Mehmet Solaman Huq</h1>
         <p>November 20th Eary 12:16am at Kaiser Medial Center San Francisco</p>
@@ -43,13 +45,34 @@
             <img src=" ../images/Balloons_clip_art_hight.png" alt="Ballon">
         </figure>
     </article>
-    <h2 class="w3-center">Click on Images to View Automatic Slideshow</h2>
-    <div class="w3-content w3-section" style="max-width:500px">
-        <img class="mySlides" src="../images/mehmet1.jpg" style="width:100%">
-        <img class="mySlides" src="../images/mehmet.jpg" style="width:100%">
-        <img class="mySlides" src="../images/solsasbaby.jpg" style="width:100%">
-        <img class="mySlides" src="../images/sasha.jpg" style="width:100%">
+
+    <div class="w3-content w3-display-container">
+        <h2 style="color: beige;"> Click on arrows to view slideshow from 2020</h2>
+        <img class="mySlides1 mehhand" src="../images/mehhand.jpg" alt="Mehmet">
+        <img class="mySlides1 mehsol" src="../images/mehsol.jpg" alt="Mehmet and Solaman Sleeping">
+        <img class="mySlides1 mehmetsash" src="../images/mehmetsash.jpg" alt="Mehmet and sasha">
+        <img class="mySlides1 mehsolsas" src="../images/mehsolsas.jpg" alt="Mehmet Mom and Dad">
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 0)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 0)">&#10095;</button>
     </div>
+
+    <div class="w3-content w3-display-container">
+        <h2 style="color: beige;"> Click on arrows to view slideshow from 2021</h2>
+        <img class="mySlides2 mehdress" src="../images/mehdress.jpg" alt="Mehmet dressed up">
+        <img class="mySlides2 mehgrandm" src="../images/mehgrandm.jpg" alt="Mehmet with Grandparents picture">
+        <img class="mySlides2 mehhidding_close" src="../images/mehhidding_close.jpg" alt="Metmet hidding">
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 1)">&#10095;</button>
+    </div>
+    <article class="container-golden w3-khaki w3-border">
+        <h2>Baby Blanket Video</h2>
+        <video width="400" controls>
+            <source src="../images/video_blacket.mp4" type="video/mp4">
+            <source src="mov_bbb.ogg" type="video/ogg">
+            Your browser does not support HTML video.
+        </video>
+    </article>
+
     <footer class="w3-container w3-khaki">
         <p>&copy; Joan Huq 2021</p>
     </footer>
