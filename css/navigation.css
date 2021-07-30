@@ -62,7 +62,7 @@ li-navigate{
 li a {
   display:inline-block;
   text-align: center;
-  padding: 20px 80px;
+  padding: 20px 50px;
   text-decoration: none;
   border-right: 2px dashed black;
   border-left: 2px dashed black;

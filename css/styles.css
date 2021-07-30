@@ -443,3 +443,6 @@ div.desc {
     height: auto;
     margin: 10px auto;
 }
+
+#more 
+{display: none;}
