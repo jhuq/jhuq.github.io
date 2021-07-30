@@ -33,8 +33,28 @@
                     <li class="li-navigate"><a href="../pages/Solaman.html">Solaman/Sasha</a></li>
                     <li class="li-navigate"><a class="active" style="color: black;"
                             href="../pages/mehmet.html">Mehmet</a></li>
+                    <li class="li-navigate"><a href="../pages/poems.html">Poems</a></li>
                 </ul>
             </ul>
+            <div class="w3-container" style="width:20%">
+                <div class="w3-bar w3-topbar w3-bottombar w3-border-teal dotted-border">
+                    <div class="w3-dropdown-hover">
+                        <button class="w3-button w3-topbar w3-bottombar w3-border-teal dotted-border w3-hover-border-yellow
+                            ">
+                            Slideshow Dropdown</button>
+                        <div class="w3-dropdown-content w3-bar-block w3-topbar w3-bottombar w3-border-teal dotted-border w3-hover-border-yellow "
+                            style="width:25%">
+                            <a href="#2020" class="w3-bar-item w3-topbar w3-bottombar w3-border-teal dotted-border
+                                w3-hover-border-yellow">Slideshow from 2020</a>
+                            <a href="#2021" class="w3-bar-item w3-topbar w3-bottombar w3-border-teal dotted-border
+                                w3-hover-border-yellow">Slideshow from 2021</a>
+                            <a href="#video" class="w3-bar-item w3-topbar w3-bottombar w3-border-teal dotted-border
+                                w3-hover-border-yellow">Baby Blanket Video
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -47,7 +67,10 @@
     </article>
 
     <div class="w3-content w3-display-container">
-        <h2 style="color: beige;"> Click on arrows to view slideshow from 2020</h2>
+        <h2 id="2020" style="color: beige;"> Click on arrows to view slideshow from 2020</h2>
+        <p style="text-align: center;">
+            <a href=" #top" class="top-link">top</a>
+        </p>
         <img class="mySlides1 mehhand" src="../images/mehhand.jpg" alt="Mehmet">
         <img class="mySlides1 mehsol" src="../images/mehsol.jpg" alt="Mehmet and Solaman Sleeping">
         <img class="mySlides1 mehmetsash" src="../images/mehmetsash.jpg" alt="Mehmet and sasha">
@@ -57,7 +80,10 @@
     </div>
 
     <div class="w3-content w3-display-container">
-        <h2 style="color: beige;"> Click on arrows to view slideshow from 2021</h2>
+        <h2 id="2021" style="color: beige;"> Click on arrows to view slideshow from 2021</h2>
+        <p style="text-align: center;">
+            <a href=" #top" class="top-link">top</a>
+        </p>
         <img class="mySlides2 mehdress" src="../images/mehdress.jpg" alt="Mehmet dressed up">
         <img class="mySlides2 mehgrandm" src="../images/mehgrandm.jpg" alt="Mehmet with Grandparents picture">
         <img class="mySlides2 mehhidding_close" src="../images/mehhidding_close.jpg" alt="Metmet hidding">
@@ -65,7 +91,10 @@
         <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 1)">&#10095;</button>
     </div>
     <article class="container-golden w3-khaki w3-border">
-        <h2>Baby Blanket Video</h2>
+        <h2 id="video">Baby Blanket Video</h2>
+        <p>
+            <a href=" #top" class="top-link">top</a>
+        </p>
         <video width="400" controls>
             <source src="../images/video_blacket.mp4" type="video/mp4">
             <source src="mov_bbb.ogg" type="video/ogg">
