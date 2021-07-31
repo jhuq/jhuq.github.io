@@ -1,48 +1,21 @@
-function myFunction() {
-  var dots = document.getElementById("dots");
-  var moreText = document.getElementById("more");
-  var btnText = document.getElementById("myBtn");
-
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "Read more";
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "Read less";
-    moreText.style.display = "inline";
-  }
+function toggleSeeMore() {
+    if(document.getElementById("textarea").style.display == 'none') {
+        document.getElementById("textarea").style.display = 'block';
+        document.getElementById("seeMore").innerHTML = 'See less';
+    }
+    else {
+        document.getElementById("textarea").style.display = 'none';
+        document.getElementById("seeMore").innerHTML = 'See more';        
+    }
 }
 
-  function myFunction1() {
-    var dots = document.getElementById("dots1");
-    var moreText = document.getElementById("more1");
-    var btnText = document.getElementById("myBtn1");
-
-    if (dots.style.display === "none") {
-      dots.style.display = "inline";
-      btnText.innerHTML = "Read more";
-      moreText.style.display = "none";
-    } else {
-      dots.style.display = "none";
-      btnText.innerHTML = "Read less";
-      moreText.style.display = "inline";
+function toggleSeeMore1() {
+    if(document.getElementById("textarea1").style.display == 'none') {
+        document.getElementById("textarea1").style.display = 'block';
+        document.getElementById("seeMore1").innerHTML = 'See less';
     }
-  }
-
-  
-  function myFunction2() {
-    var dots = document.getElementById("dots2");
-    var moreText = document.getElementById("more2");
-    var btnText = document.getElementById("myBtn2");
-
-    if (dots.style.display === "none") {
-      dots.style.display = "inline";
-      btnText.innerHTML = "Read more";
-      moreText.style.display = "none";
-    } else {
-      dots.style.display = "none";
-      btnText.innerHTML = "Read less";
-      moreText.style.display = "inline";
+    else {
+        document.getElementById("textarea1").style.display = 'none';
+        document.getElementById("seeMore1").innerHTML = 'See more';        
     }
-  }
+}
