@@ -444,5 +444,76 @@ div.desc {
     margin: 10px auto;
 }
 
-#more 
-{display: none;}
+#more1 {
+    display: none;
+}
+#more2 {
+    display: none;
+}
+
+#more {
+    display: none;
+}
+
+.long-text {
+	display: none
+}
+
+#textarea {
+    display: none; /* hidden by default */
+}
+
+#textarea:target {
+    display: block; /* shown when a link targeting this id is clicked */
+}
+
+#textarea + ul.controls {
+    list-style-type: none; /* aesthetics only, adjust to taste, irrelevant to demo */
+}
+
+/* hiding the hide link when the #textarea is not targeted,
+   hiding the show link when it is selected: */
+#textarea + ul.controls .hide,
+#textarea:target + ul.controls .show {
+    display: none;
+}
+
+/* Showing the hide link when the #textarea is targeted,
+   showing the show link when it's not: */
+#textarea:target + ul.controls .hide,
+#textarea + ul.controls .show {
+    display: inline-block;
+}
+
+#textarea {
+    /* hide by default: */
+    display: none;
+}
+
+/* when the checkbox is checked, show the neighbouring #textarea element: */
+#textAreaToggle:checked + #textarea {
+    display: block;
+}
+
+/* position the checkbox off-screen: */
+input[type="checkbox"] {
+    position: absolute;
+    left: -1000px;
+}
+
+/* Aesthetics only, adjust to taste: */
+label {
+    display: block;
+}
+
+/* when the checkbox is unchecked (its default state) show the text
+   'Show ' in the label element: */
+#textAreaToggle + #textarea + label::before {
+    content: 'Show ';
+}
+
+/* when the checkbox is checked 'Hide ' in the label element; the
+   general-sibling combinator '~' is required for a bug in Chrome: */
+#textAreaToggle:checked ~ #textarea + label::before {
+    content: 'Hide ';
+}
