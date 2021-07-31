@@ -20,6 +20,8 @@
     <script type='text/javascript' src='../scripts/quoteToggle.js' async></script>
     <link rel="stylesheet" href="../css/styles.css">
     <script type='text/javascript' src='../scripts/readmore.js' async></script>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script type='text/javascript' src='../scripts/readmore.js' async></script>
 </head>
 
 <body>
@@ -52,71 +54,62 @@
             </div>
         </nav>
     </header>
-    <article class="container-golden w3-khaki">
-        <h1>Poetry</h1>
-    </article>
-    <section class="container-golden w3-khaki">
+    <div class="container-golden w3-khaki">
         <h2 id="diana">Diana, I fear the light</h2>
         <h3>Written 1972</h3>
         <img src="../images/moon.jpg" alt="moon">
-        <p>I fear the darkness with its hidden panels of illusions and myths.<span id="dots1">...</span><span
-                id="more1"><br>But I also love the darkness;
-                I find my time to break down and imagine.<br>
-                <br>The practical of the day becomes the peculiar of the night.<br>
-                Everything takes on a new cover.<br>
-                My mirror becomes hidden words.<br>
-                My eyes become magnets of shadows and every noise becomes cries of those shadows.<br>
-                <br> I surround myself in darkness and throw away the adulthood of too much knowledge.<br>
-                I laugh and dance and sing in unreal and play hide and seek with reality.<br>
-                <br> In my games, I wonder, what is real?<br>
-                <br> Do our eyes tell us lies of make-believe in the too much brightness of day?<br>
-                <br> Do we see the realness of the word when darkness comes to rest our eyes from the light?<br>
-                <br> Or are we completely fooled by day and night and we are our own illusions?<br>
-                <br> I fear the darkness and I fear my love for it.<br>
-                <br> But I would not give it up.<br>
-                I find my laughter and my life in these empty spaces of time.<br>
-            </span></p>
-        <button onclick="myFunction1()" id="myBtn1">Read more</button>
-    </section>
-    <section class="container-golden w3-khaki">
+        <p>I fear the darkness with its hidden panels of illusions and myths.</p>
+        <p id="textarea" style="display: none">But I also love the darkness;
+            I find my time to break down and imagine.<br>
+            <br>The practical of the day becomes the peculiar of the night.<br>
+            Everything takes on a new cover.<br>
+            My mirror becomes hidden words.<br>
+            My eyes become magnets of shadows and every noise becomes cries of those shadows.<br>
+            <br> I surround myself in darkness and throw away the adulthood of too much knowledge.<br>
+            I laugh and dance and sing in unreal and play hide and seek with reality.<br>
+            <br> In my games, I wonder, what is real?<br>
+            <br> Do our eyes tell us lies of make-believe in the too much brightness of day?<br>
+            <br> Do we see the realness of the word when darkness comes to rest our eyes from the light?<br>
+            <br> Or are we completely fooled by day and night and we are our own illusions?<br>
+            <br> I fear the darkness and I fear my love for it.<br>
+            <br> But I would not give it up.<br>
+            I find my laughter and my life in these empty spaces of time.</p>
+        <a id="seeMore" onclick="toggleSeeMore()" href="javascript:void(0);">See More</a>
+    </div>
+    <div class="container-golden w3-khaki">
         <h2 id="man">Man</h2>
         <h3>Written in 1973</h3>
         <img src="../images/color.jpg" alt="colors">
         <p>Colors;<br>
             clear and translucent<br>
             he can see and be seen<br>
-            yet he hides and is blind.<br>
-            <span id="dots2">...</span><span id="more2">
-                <br>Colors;<br>
-                one color<br>
-                solid with a purpose<br>
-                but a blend of pastels<br>
-                he cannot decide.<br>
-                <br> Colors;<br>
-                black and deep<br>
-                he is filled with sorrow<br>
-                but he is framed in white<br>
-                he does have hope.<br>
-
-                <br>Colors;<br>
-                red with fire<br>
-                he fights for his beliefs<br>
-                but he is dyed in green<br>
-                He wants to grow and learn.<br>
-
-                <br>Colors;<br>
-                yellow like the sun<br>
-                he has ideals of perfection<br>
-                but his body is pale<br>
-                he is only a man.
-                <br>
-
-            </span></p>
-        <button onclick="myFunction2()" id="myBtn2">Read more</button>
-    </section>
+            yet he hides and is blind. </p>
+        <p id="textarea1" style="display: none">one color<br>
+            solid with a purpose<br>
+            but a blend of pastels<br>
+            he cannot decide.<br>
+            <br> Colors;<br>
+            black and deep<br>
+            he is filled with sorrow<br>
+            but he is framed in white<br>
+            he does have hope.<br>
+            <br>Colors;<br>
+            red with fire<br>
+            he fights for his beliefs<br>
+            but he is dyed in green<br>
+            He wants to grow and learn.<br>
+            <br>Colors;<br>
+            yellow like the sun<br>
+            he has ideals of perfection<br>
+            but his body is pale<br>
+            he is only a man.</p>
+        <a id="seeMore1" onclick="toggleSeeMore1()" href="javascript:void(0);">See More</a>
+    </div>
     <footer class="w3-container w3-khaki">
         <p>&copy; Joan Huq 2021</p>
     </footer>
 </body>
+
+
 
 </html>
