@@ -19,3 +19,14 @@ function toggleSeeMore1() {
         document.getElementById("seeMore1").innerHTML = 'See more';        
     }
 }
+
+function toggleSeeMore2() {
+    if(document.getElementById("textarea2").style.display == 'none') {
+        document.getElementById("textarea2").style.display = 'block';
+        document.getElementById("seeMore2").innerHTML = 'See less';
+    }
+    else {
+        document.getElementById("textarea2").style.display = 'none';
+        document.getElementById("seeMore2").innerHTML = 'See more';        
+    }
+}
