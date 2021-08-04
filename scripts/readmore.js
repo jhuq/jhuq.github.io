@@ -30,3 +30,25 @@ function toggleSeeMore2() {
         document.getElementById("seeMore2").innerHTML = 'See more';        
     }
 }
+
+function toggleSeeMore3() {
+    if(document.getElementById("textarea3").style.display == 'none') {
+        document.getElementById("textarea3").style.display = 'block';
+        document.getElementById("seeMore3").innerHTML = 'See less';
+    }
+    else {
+        document.getElementById("textarea3").style.display = 'none';
+        document.getElementById("seeMore3").innerHTML = 'See more';        
+    }
+}
+
+function toggleSeeMore4() {
+    if(document.getElementById("textarea4").style.display == 'none') {
+        document.getElementById("textarea4").style.display = 'block';
+        document.getElementById("seeMore4").innerHTML = 'See less';
+    }
+    else {
+        document.getElementById("textarea4").style.display = 'none';
+        document.getElementById("seeMore4").innerHTML = 'See more';        
+    }
+}
