@@ -52,3 +52,14 @@ function toggleSeeMore4() {
         document.getElementById("seeMore4").innerHTML = 'See more';        
     }
 }
+
+function toggleSeeMore5() {
+    if(document.getElementById("textarea5").style.display == 'none') {
+        document.getElementById("textarea5").style.display = 'block';
+        document.getElementById("seeMore5").innerHTML = 'See less';
+    }
+    else {
+        document.getElementById("textarea5").style.display = 'none';
+        document.getElementById("seeMore5").innerHTML = 'See more';        
+    }
+}
