@@ -63,3 +63,14 @@ function toggleSeeMore5() {
         document.getElementById("seeMore5").innerHTML = 'See more';        
     }
 }
+
+function toggleSeeMore6() {
+    if(document.getElementById("textarea6").style.display == 'none') {
+        document.getElementById("textarea6").style.display = 'block';
+        document.getElementById("seeMore6").innerHTML = 'See less';
+    }
+    else {
+        document.getElementById("textarea6").style.display = 'none';
+        document.getElementById("seeMore6").innerHTML = 'See more';        
+    }
+}
